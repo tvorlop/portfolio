@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import commands from '/data/commands'
 import Home from '/components/home'
+import About from '/components/about'
 
 function App() {
   const [currentView, setCurrentView] = useState('home')
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       {currentView === 'home' && <Home />}
+      {currentView === 'about' && <About />}
       <label>
         taylor@pixel-pulse-studios:~${' '}
         <input

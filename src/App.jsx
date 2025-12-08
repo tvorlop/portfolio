@@ -1,13 +1,39 @@
 import { useState } from 'react'
+import commands from '/data/commands'
+import Home from '/components/home'
 
 function App() {
   const [currentView, setCurrentView] = useState('home')
-  const [inputValue, setInputValue] = useState('')
+  const [input, setInput] = useState('')
   const [expandedProject, setExpandedProject] = useState(null)
+
+  const match = commands.find((command) => input === command.name)
 
   return (
     <>
-      <h1>Welcome to Pixel Pulse Studios - Taylor Vorlop</h1>
+      {currentView === 'home' && <Home />}
+      <label>
+        taylor@pixel-pulse-studios:~${' '}
+        <input
+          style={{
+            background: 'none',
+            border: 'none',
+            color: 'white',
+            width: '32ch',
+          }}
+          placeholder="[Type Command or click above...]"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              if (match) {
+                setCurrentView(match.output)
+                setInput('')
+              }
+            }
+          }}
+        />
+      </label>
     </>
   )
 }

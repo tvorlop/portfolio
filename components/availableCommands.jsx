@@ -10,8 +10,8 @@ const AvailableCommands = () => {
         {commands.map((command) => (
           <li key={command.name}>
             <div className="command-list">
-              <div>{command.name}</div>
-              <div>{command.description}</div>
+              <div className="command-name">{command.name}</div>
+              <div className="command-description">{command.description}</div>
             </div>
           </li>
         ))}

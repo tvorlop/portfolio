@@ -1,7 +1,6 @@
 const contactInfo = {
-  email: "your@email.com",
-  github: "https://github.com/tvorlop",
-  linkedin: "your-linkedin-url",
-};
+  email: 'tvorlop@live.ca',
+  github: 'https://github.com/tvorlop',
+}
 
-export default contactInfo;
+export default contactInfo

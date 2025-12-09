@@ -2,6 +2,8 @@ import { useState } from 'react'
 import commands from '/data/commands'
 import Home from '/components/home'
 import About from '/components/about'
+import Skills from '/components/skills'
+import Contact from '/components/contact'
 
 function App() {
   const [currentView, setCurrentView] = useState('home')
@@ -14,8 +16,13 @@ function App() {
     <>
       {currentView === 'home' && <Home />}
       {currentView === 'about' && <About />}
+      {currentView === 'skills' && <Skills />}
+      {currentView === 'contact' && <Contact />}
+      <br />
+      <br />
       <label>
-        taylor@pixel-pulse-studios:~${' '}
+        <span style={{ color: 'magenta' }}>taylor</span>
+        @pixel-pulse-studios:~${' '}
         <input
           style={{
             background: 'none',

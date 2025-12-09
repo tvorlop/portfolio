@@ -1,8 +1,8 @@
 const skills = [
-  { category: "Languages", items: ["HTML", "CSS", "JavaScript"] },
-  { category: "Frameworks", items: ["React"] },
-  { category: "Tools", items: ["Git", "Neovim", "VS Code"] },
-  { category: "Platforms", items: ["Linux", "Windows"] },
-];
+  { category: 'Languages', items: ['HTML', 'CSS', 'JavaScript'] },
+  { category: 'Frameworks', items: ['React'] },
+  { category: 'Tools', items: ['Git', 'Neovim', 'VS Code'] },
+  { category: 'Platforms', items: ['Linux', 'MacOS', 'Windows'] },
+]
 
-export default skills;
+export default skills

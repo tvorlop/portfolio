@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 body {
@@ -30,6 +31,7 @@ input {
 }
 
 ul {
+  padding-top: 0.5rem;
   padding-left: 2rem;
 }
 
@@ -41,4 +43,19 @@ li {
   display: grid;
   grid-template-columns: 8rem auto;
   gap: 1rem;
+}
+
+.command-name {
+  color: cyan;
+}
+
+.skill-category {
+  padding-top: 2rem;
+}
+
+.skill-items {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  padding-top: 0.25rem;
 }

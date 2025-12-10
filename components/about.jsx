@@ -1,13 +1,7 @@
-import AvailableCommands from '/components/availableCommands'
-
 const About = () => {
   return (
     <>
-      <h4>About</h4>
-      <br />
-      <AvailableCommands />
-      <br />
-      <p>About - Learn about me</p>
+      <h4>About - Learn about me</h4>
       <br />
       <p style={{ paddingTop: '1rem' }}>
         I'm Taylor Vorlop, a self-taught frontend developer and founder of Pixel

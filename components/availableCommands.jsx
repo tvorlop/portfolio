@@ -1,6 +1,6 @@
 import commands from '/data/commands/'
 
-const AvailableCommands = () => {
+const AvailableCommands = ({ handleCommand }) => {
   return (
     <label>
       {' '}
@@ -10,7 +10,12 @@ const AvailableCommands = () => {
         {commands.map((command) => (
           <li key={command.name}>
             <div className="command-list">
-              <div className="command-name">{command.name}</div>
+              <div
+                className="command-name"
+                onClick={() => handleCommand(command.name)}
+              >
+                {command.name}
+              </div>
               <div className="command-description">{command.description}</div>
             </div>
           </li>

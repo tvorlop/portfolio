@@ -1,14 +1,9 @@
-import AvailableCommands from '/components/availableCommands/'
 import skills from '/data/skills/'
 
 const Skills = () => {
   return (
     <>
-      <h4>Skills</h4>
-      <br />
-      <AvailableCommands />
-      <br />
-      <p>Skills - My current skills</p>
+      <h4>Skills - My current skills</h4>
       <ul>
         {skills.map((skill) => (
           <li key={skill.category}>

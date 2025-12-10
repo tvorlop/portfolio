@@ -1,12 +1,12 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0.1rem;
   box-sizing: border-box;
   line-height: 1.5;
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: black;
   color: white;
   font-family: 'Fira Code', monospace;
   min-height: 100vh;
@@ -58,4 +58,11 @@ li {
   grid-auto-flow: column;
   gap: 1.5rem;
   padding-top: 0.25rem;
+}
+
+.project-card {
+  display: inline-grid;
+  grid-template-columns: 8rem auto;
+  gap: 1rem;
+  padding-left: 2rem;
 }

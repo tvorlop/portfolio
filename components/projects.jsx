@@ -1,15 +1,10 @@
 import projects from '/data/projects/'
-import AvailableCommands from '/components/availableCommands/'
 import ProjectCard from '/components/projectCard/'
 
 const Projects = () => {
   return (
     <>
-      <h4>Projects</h4>
-      <br />
-      <AvailableCommands />
-      <br />
-      <p>My Projects - Live</p>
+      <h4>My Projects - Live</h4>
       <br />
       {projects.map((project) => (
         <ProjectCard

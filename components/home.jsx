@@ -1,13 +1,7 @@
-import AvailableCommands from '/components/availableCommands/'
-
 const Home = () => {
   return (
     <>
-      <h4>Pixel Pulse Studios - Taylor Vorlop</h4>
-      <br />
-      <AvailableCommands />
-      <br />
-      <p>Welcome to Pixel Pulse Studios!</p>
+      <h4>Welcome to Pixel Pulse Studios!</h4>
       <br />
       <p style={{ paddingTop: '1rem' }}>
         Click on one of the{' '}

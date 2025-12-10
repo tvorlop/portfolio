@@ -7,7 +7,7 @@ const projects = [
     fullDesc:
       'Multi-location childcare website for Montessori-inspired daycare with three facilities in Maple Ridge. Built responsive multi-page site with program navigation, contact forms, and location-specific information. Optimized all images to AVIF format for performance. Vanilla HTML/CSS/JS implementation focused on accessibility and mobile-first design for parent users.',
     stack: ['HTML ', 'CSS ', 'JavaScript '],
-    link: 'https://doverlearningcenter.com',
+    link: 'https://doverlearningcenterinc.ca',
     screenshot: '/images/dover.png',
   },
   {

@@ -4,18 +4,24 @@ const ProjectCard = (props) => {
       <p>
         $ <span style={{ color: 'cyan' }}>{props.command}</span> - {props.name}
       </p>
-      <div style={{ paddingTop: '1rem', paddingBottom: '2rem' }}>
-        <p style={{ padding: '.25rem 0' }}>Description {props.description}</p>
-        <p style={{ padding: '.25rem 0' }}>Stack {props.tech}</p>
-        <p style={{ padding: '.25rem 0' }}>
-          Link{' '}
+
+      <div
+        className="project-card"
+        style={{ paddingTop: '1rem', paddingBottom: '2rem' }}
+      >
+        <div className="card-call">Description</div>
+        <div className="card-answer">{props.description}</div>
+        <div className="card-call">Stack</div>
+        <div className="card-answer">{props.tech}</div>
+        <div className="card-call">Link</div>
+        <div className="card-answer">
           <a
-            href="{props.link}"
+            href={props.link}
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             {props.link}
           </a>
-        </p>
+        </div>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import Home from '/components/home'
 import About from '/components/about'
 import Skills from '/components/skills'
 import Contact from '/components/contact'
+import Projects from '/components/projects'
 
 function App() {
   const [currentView, setCurrentView] = useState('home')
@@ -18,6 +19,7 @@ function App() {
       {currentView === 'about' && <About />}
       {currentView === 'skills' && <Skills />}
       {currentView === 'contact' && <Contact />}
+      {currentView === 'projects' && <Projects />}
       <br />
       <br />
       <label>
